@@ -1,0 +1,13 @@
+{
+  "type": "object",
+  "properties": {
+    "url": { "type": "string" },
+    "title": { "type": "string" },
+    "publish_date": { "type": ["string", "null"] },
+    "author": { "type": ["string", "null"] },
+    "raw_html": { "type": "string" },
+    "clean_text": { "type": "string" }
+  },
+  "required": ["url", "title", "raw_html", "clean_text"],
+  "additionalProperties": false
+}

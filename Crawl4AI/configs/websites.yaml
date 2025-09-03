@@ -1,0 +1,20 @@
+websites:
+  - name: "sample_news_site"
+    start_urls:
+      - "https://www.scrapethissite.com/pages/simple/"
+    crawl_depth: 1
+    rules:
+      follow:
+        - "a.news-link"
+      extract:
+        - "article.main-content"
+
+  - name: "another_site"
+    start_urls:
+      - "http://example.com"
+    crawl_depth: 2
+    rules:
+      follow:
+        - "a.post-link"
+      extract:
+        - "div.article-body"
